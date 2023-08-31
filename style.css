@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "grande grande caixa1 caixa2 caixa3 caixa4"
+    "grande grande caixa5 caixa6 caixa7 caixa8"
+    ;
+    gap:10px
+}
+.filho{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+}
+
+.container .filho:nth-child(1){
+    grid-area: grande;
+    width: auto;
+    height: auto;
+    
+}
+.container .filho:nth-child(2){
+    grid-area: caixa1;
+}
+.container .filho:nth-child(3){
+    grid-area: caixa2;
+}
+.container .filho:nth-child(4){
+    grid-area: caixa3;
+}
+.container .filho:nth-child(5){
+    grid-area: caixa4;
+}
+.container .filho:nth-child(6){
+    grid-area: caixa5;
+}
+.container .filho:nth-child(7){
+    grid-area: caixa6;
+}
+.container .filho:nth-child(8){
+    grid-area: caixa7;
+}
+.container .filho:nth-child(9){
+    grid-area: caixa8   ;
+}
+
